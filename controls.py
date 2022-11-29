@@ -289,7 +289,7 @@ class Gallery(Control):
         sep_width = 10
         sep_height = 10
 
-        thumbnail_rect = pygame.Rect(sep_width, sep_height-self.scroll, self.thumbnail_width, self.thumbnail_height)
+        thumbnail_rect = pygame.Rect(sep_width, sep_height-self.scroll+self.rect.y, self.thumbnail_width, self.thumbnail_height)
 
         i = 0
         for thumbnail in self.thumbnails:
